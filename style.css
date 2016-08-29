@@ -1,0 +1,31 @@
+h1, h2, h3 {
+  text-align: center;
+}
+
+body {
+  width: 1000px;
+  margin: auto;
+  background-image: url("images/wallpaper.png");
+}
+
+.instructions {
+  text-align: center;
+  border: solid black 1px;
+  width: 190px;
+  height: 600px;
+  float: left;
+}
+
+.container {
+  border: solid green 2px;
+  width:800px;
+  height: 600px;
+  float: left;
+}
+
+.cards {
+  border: solid red 1px;
+  height: 145px;
+  width: 190px;
+  float:left;
+}
