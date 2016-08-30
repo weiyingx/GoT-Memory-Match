@@ -16,16 +16,18 @@ body {
   float: left;
 }
 
-.container {
+#container {
   border: solid green 2px;
   width:800px;
   height: 600px;
   float: left;
 }
 
-.cards {
+#container > div {
+  background: url("images/wallpaper.png") no-repeat;
   border: solid red 1px;
   height: 145px;
-  width: 190px;
+  width: 155px;
   float:left;
+  cursor: pointer;
 }
