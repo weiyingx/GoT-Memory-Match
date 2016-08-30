@@ -3,7 +3,7 @@ h1, h2, h3 {
 }
 
 body {
-  width: 1000px;
+  width: 1200px;
   margin: auto;
   background-image: url("images/wallpaper.png");
 }
@@ -11,23 +11,26 @@ body {
 .instructions {
   text-align: center;
   border: solid black 1px;
-  width: 190px;
+  width: 220px;
   height: 600px;
   float: left;
+  margin-right: 20px;
 }
 
 #container {
   border: solid green 2px;
-  width:800px;
+  width:910px;
   height: 600px;
   float: left;
+
 }
 
 #container > div {
-  background: url("images/wallpaper.png") no-repeat;
+  background: url("images/wallpaper.png");
   border: solid red 1px;
   height: 145px;
-  width: 155px;
+  width: 180px;
   float:left;
   cursor: pointer;
+  color: red;
 }
