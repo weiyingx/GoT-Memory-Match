@@ -21,42 +21,41 @@ function newGame () {
   array.shuffle();
   for (var i = 0; i < array.length; i++) {
     output += '<div id="card_'+i+'" onclick="flippedCard(this,\''+array[i]+'\')"></div>';
-    	}
-    	document.getElementById('container').innerHTML = output;
-    }
-
-function flippedCard(card,val) {
-    if (card.innerHTML = "" && values.length < 2) {
-      card.style.background = '#FFF';
-      card.innerHTML = val;
-      if (values.length == 0) {
-        values.push(val);
-        card_ids.push(card.id);
-      } else if (values.length == 1) {
-        values.push(val);
-        card_ids.push(card.id);
-        if (values[0] == values[1]) {
-          cardFlipped +=2;
-          values = [];
-          card_ids = [];
-          if (cardFlipped == array.length) {
-            document.getElementById('container').innerHTML = "";
-            newGame();
-          }
-        } else {
-          function flipBack () {
-            var card_1 = document.getElementById(card_ids[0]);
-            var card_2 = document.getElementById(card_ids[1]);
-            card_1.style.background = 'url("images/wallpaper.png")';
-            card_1.innerHTML = "";
-            card_2.style.background = 'url("images/wallpaper.png")';
-            card_2.innerHTML = "";
-            values = [];
+  	}
+  	document.getElementById('container').innerHTML = output;
+  }
+    function flippedCard(card,val){
+    	if(card.innerHTML == "" && values.length < 2){
+    		card.style.background = '#FFF';
+    		card.innerHTML = val;
+    		if(values.length == 0){
+    			values.push(val);
+    			card_ids.push(card.id);
+    		} else if(values.length == 1){
+    			values.push(val);
+    			card_ids.push(card.id);
+    			if(values[0] == values[1]){
+    				cardflipped += 2;
+    				values = [];
             card_ids = [];
-          }
-          setTimeout(flipBack, 1000);
-        }
-      }
+    				if(cardFlipped == memory_array.length){
+    					alert("Board cleared... generating new board");
+    					document.getElementById('container').innerHTML = "";
+    					newGame();
+    				}
+    			} else {
+    				function flipBack(){
+    				    var card_1 = document.getElementById(card_ids[0]);
+    				    var card_2 = document.getElementById(card_ids[1]);
+    				    card_1.style.background = 'url(images/wallpaper.png) no-repeat';
+                	    card_1.innerHTML = "";
+    				    card_2.style.background = 'url(images/wallpaper.png) no-repeat';
+                	    card_2.innerHTML = "";
+    				    values = [];
+                	    card_ids = [];
+    				}
+    				setTimeout(flipBack, 700);
+    			}
+    		}
+    	}
     }
-
-}
