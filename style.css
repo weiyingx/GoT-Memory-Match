@@ -26,7 +26,8 @@ body {
 }
 
 #container > div {
-  background: url("images/wallpaper.png");
+  background: url("images/wallpaper.png") no-repeat;
+  background-size: 11em 9em;
   border: solid red 1px;
   height: 145px;
   width: 180px;

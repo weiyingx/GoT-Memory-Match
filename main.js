@@ -35,11 +35,10 @@ function newGame () {
     			values.push(val);
     			card_ids.push(card.id);
     			if(values[0] == values[1]){
-    				cardflipped += 2;
+    				cardFlipped += 2;
     				values = [];
             card_ids = [];
     				if(cardFlipped == memory_array.length){
-    					alert("Board cleared... generating new board");
     					document.getElementById('container').innerHTML = "";
     					newGame();
     				}
@@ -47,9 +46,11 @@ function newGame () {
     				function flipBack(){
     				    var card_1 = document.getElementById(card_ids[0]);
     				    var card_2 = document.getElementById(card_ids[1]);
-    				    card_1.style.background = 'url(images/wallpaper.png) no-repeat';
+    				    card_1.style.background = 'url(images/wallpaper.png)';
+                card_1.style.backgroundSize = '11em 9em';
                 	    card_1.innerHTML = "";
-    				    card_2.style.background = 'url(images/wallpaper.png) no-repeat';
+    				    card_2.style.background = 'url(images/wallpaper.png)';
+                card_2.style.backgroundSize = '11em 9em';
                 	    card_2.innerHTML = "";
     				    values = [];
                 	    card_ids = [];
