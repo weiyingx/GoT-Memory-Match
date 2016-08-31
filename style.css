@@ -11,14 +11,13 @@ body {
 }
 
 #logo {
-
  margin-top: 10px;
- margin-left: 200px;
+ margin-left: 360px;
 }
 
 #logo2 {
-  height: 80px;
-  width: 450px;
+  height: 100px;
+  width: 530px;
 }
 
 @font-face {
