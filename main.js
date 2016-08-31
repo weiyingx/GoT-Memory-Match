@@ -5,6 +5,7 @@ var values = [];
 var card_ids = [];
 var cardFlipped = 0;
 
+//fisher-yates shuffle method
 Array.prototype.shuffle = function () {
   var i = this.length, j, temp;
   while (--i > 0) {
@@ -26,8 +27,9 @@ function newGame () {
   }
     function flippedCard(card,val){
     	if(card.innerHTML == "" && values.length < 2){
-    		card.style.background = '#FFF';
-    		card.innerHTML = val;
+    		card.innerHTML = '<img src="images/' + val +'.jpg">';
+        card.style.height = '150px';
+        card.style.width = '170px';
     		if(values.length == 0){
     			values.push(val);
     			card_ids.push(card.id);
@@ -38,7 +40,10 @@ function newGame () {
     				cardFlipped += 2;
     				values = [];
             card_ids = [];
-    				if(cardFlipped == memory_array.length){
+    				if(cardFlipped == array.length){
+              swal({  title: "The North Remembers",
+                      text: "Winter is Coming..",
+                      imageUrl: "banners/B.png" });
     					document.getElementById('container').innerHTML = "";
     					newGame();
     				}
@@ -46,10 +51,10 @@ function newGame () {
     				function flipBack(){
     				    var card_1 = document.getElementById(card_ids[0]);
     				    var card_2 = document.getElementById(card_ids[1]);
-    				    card_1.style.background = 'url(images/wallpaper.png)';
+    				    card_1.style.background = 'url(images/throne.jpg)';
                 card_1.style.backgroundSize = '11em 9em';
                 	    card_1.innerHTML = "";
-    				    card_2.style.background = 'url(images/wallpaper.png)';
+    				    card_2.style.background = 'url(images/throne.jpg)';
                 card_2.style.backgroundSize = '11em 9em';
                 	    card_2.innerHTML = "";
     				    values = [];

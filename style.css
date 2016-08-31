@@ -5,33 +5,86 @@ h1, h2, h3 {
 body {
   width: 1200px;
   margin: auto;
-  background-image: url("images/wallpaper.png");
+  /*background-color: black;*/
+  background-image: url("images/darkbackground.jpg");
+  background-size: cover;
+}
+
+#logo {
+
+ margin-top: 10px;
+ margin-left: 200px;
+}
+
+#logo2 {
+  height: 80px;
+  width: 450px;
+}
+
+@font-face {
+  font-family: gotFont;
+  src: url(Game-Of-Thrones.ttf);
+}
+
+h1 {
+  color: rgba(255,209,108,0.6);
+  font-family: gotFont, serif;
+  font-size: 35px;
+  margin-top: 10px;
+  margin-bottom: 20px;
+  font-style: italic;
+  text-decoration: underline;
+}
+
+h2 {
+  margin-top: 0px;
+  margin-bottom: 15px;
+  font-family: gotFont, serif;
+  font-size: 20px;
+  color: rgba(150,14,16,0.8);
+  font-style: italic;
+}
+
+h3 {
+  color: rgba(228,154,55,0.6);
+  font-size: 20px;
 }
 
 .instructions {
   text-align: center;
-  border: solid black 1px;
-  width: 220px;
+  /*border: solid white 1px;*/
+  font-family: gotFont, serif;
+  font-size: 15px;
+  color: rgb(150,14,16);
+  width: 290px;
   height: 600px;
   float: left;
   margin-right: 20px;
+  margin-top: 25px;
+
 }
 
+
 #container {
-  border: solid green 2px;
-  width:910px;
+  /*border: solid green 2px;*/
+  width: 860px;
   height: 600px;
   float: left;
-
 }
 
 #container > div {
-  background: url("images/wallpaper.png") no-repeat;
+  background: url("images/throne.jpg");
   background-size: 11em 9em;
-  border: solid red 1px;
-  height: 145px;
-  width: 180px;
+  margin-right: 2px;
+  border-radius: 1em;
+  height: 150px;
+  width: 170px;
   float:left;
   cursor: pointer;
-  color: red;
+}
+
+#container > div > img {
+  border-radius: 1em;
+  height: 150px;
+  width: 170px;
 }

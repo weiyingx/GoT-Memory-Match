@@ -2,17 +2,22 @@
 <html>
   <head>
     <meta charset="utf-8">
-    <title> Game of Thrones Memory Match</title>
+    <title> Game of Thrones Memory</title>
     <link rel="stylesheet" type="text/css" href="style.css">
+    <link rel="stylesheet" type="text/css" href="dist/sweetalert.css">
   </head>
   <body>
-    <h1>Game of Thrones Memory Match</h1>
+    <audio id="background" autoplay loop src="OpeningTheme.mp3"></audio>
+    <div id="logo"><img id="logo2" src="images/logo.png"/></div>
+    <h1>memory</h1>
     <h2>"When you play the game of thrones, you win or you die."</h2>
 
     <div class="instructions">
       <h3> Instructions </h3>
-      <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. </p>
-
+      <br>
+      <p>test your memory by matching your favourite game of thrones characters. if you match them all, you might just get to keep your head.</p>
+      <br>
+      <p> "valar morghulis"</p>
       <button> Reset </button>
 
     </div>
@@ -34,6 +39,7 @@
     </div>
 
   <script type="text/javascript" src="main.js"></script>
+  <script src="dist/sweetalert.min.js"></script>
   <script>newGame();</script>
   </body>
 
