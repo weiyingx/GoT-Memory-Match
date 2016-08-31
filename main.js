@@ -41,9 +41,8 @@ function newGame () {
     				values = [];
             card_ids = [];
     				if(cardFlipped == array.length){
-              swal({  title: "The North Remembers",
-                      text: "Winter is Coming..",
-                      imageUrl: "banners/B.png" });
+              swal({  title: "The   North   Remembers..",
+                      imageUrl: "images/stark.jpg" });
     					document.getElementById('container').innerHTML = "";
     					newGame();
     				}
