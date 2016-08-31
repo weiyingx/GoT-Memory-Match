@@ -31,7 +31,7 @@ h1 {
   font-size: 35px;
   margin-top: 10px;
   margin-bottom: 20px;
-  font-style: italic;
+  /*font-style: italic;*/
   text-decoration: underline;
 }
 
