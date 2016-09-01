@@ -5,6 +5,9 @@ var values = [];
 var card_ids = [];
 var cardFlipped = 0;
 var mouse = document.getElementById("mouse");
+var dagger = document.getElementById("dagger");
+
+
 
 //fisher-yates shuffle method
 Array.prototype.shuffle = function () {
@@ -22,7 +25,7 @@ function newGame () {
   var output = '';
   array.shuffle();
   for (var i = 0; i < array.length; i++) {
-    output += '<div id="card_'+i+'" onclick="mouse.play() + flippedCard(this,\''+array[i]+'\')"></div>';
+    output += '<div id="card_'+i+'" onclick="dagger.play() + flippedCard(this,\''+array[i]+'\')"></div>';
     }
   	document.getElementById('container').innerHTML = output;
   }
@@ -58,7 +61,7 @@ function newGame () {
     				    values = [];
                 	    card_ids = [];
     				}
-    				setTimeout(flipBack, 700);
+    				setTimeout(flipBack, 1000);
     			}
     		}
     	}
@@ -66,5 +69,5 @@ function newGame () {
 
 var reset = document.getElementById("reset");
 reset.addEventListener('click', function() {
-  newGame();
+  mouse.play() + newGame();
 });
