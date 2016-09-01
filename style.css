@@ -21,7 +21,7 @@ body {
 
 @font-face {
   font-family: gotFont;
-  src: url(Game-Of-Thrones.ttf);
+  src: url(Game-of-Thrones.ttf);
 }
 
 h1 {
@@ -67,6 +67,7 @@ h3 {
   width: 860px;
   height: 600px;
   float: left;
+
 }
 
 #container > div {
