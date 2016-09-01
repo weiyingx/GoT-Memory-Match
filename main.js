@@ -1,5 +1,6 @@
 console.log("meow")
 
+document.addEventListener('DOMContentLoaded', function() {
 
 var array = ['A', 'A', 'B', 'B', 'C', 'C', 'D', 'D', 'E', 'E', 'F', 'F', 'G', 'G', 'H', 'H', 'I', 'I', 'J', 'J'];
 var values = [];
@@ -69,6 +70,6 @@ reset.addEventListener('click', function() {
   newGame();
 });
 
-document.addEventListener('DOMContentLoaded', function() {
+
   console.log("DOM loaded");
 });
