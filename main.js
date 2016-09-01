@@ -1,7 +1,5 @@
 console.log("meow")
 
-document.addEventListener('DOMContentLoaded', function() {
-    console.log("DOM loaded");
 
 var array = ['A', 'A', 'B', 'B', 'C', 'C', 'D', 'D', 'E', 'E', 'F', 'F', 'G', 'G', 'H', 'H', 'I', 'I', 'J', 'J'];
 var values = [];
@@ -69,6 +67,4 @@ function newGame () {
 var reset = document.getElementById("reset");
 reset.addEventListener('click', function() {
   newGame();
-});
-
 });
