@@ -67,7 +67,6 @@ h3 {
   width: 860px;
   height: 600px;
   float: left;
-
 }
 
 #container > div {
@@ -84,7 +83,7 @@ h3 {
 #container > div > img {
   border-radius: 1em;
   height: 150px;
-  width: 170px;
+  width: 170px
 }
 
 #reset {

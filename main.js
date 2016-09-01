@@ -4,6 +4,7 @@ var array = ['A', 'A', 'B', 'B', 'C', 'C', 'D', 'D', 'E', 'E', 'F', 'F', 'G', 'G
 var values = [];
 var card_ids = [];
 var cardFlipped = 0;
+var mouse = document.getElementById("mouse");
 
 //fisher-yates shuffle method
 Array.prototype.shuffle = function () {
@@ -21,8 +22,8 @@ function newGame () {
   var output = '';
   array.shuffle();
   for (var i = 0; i < array.length; i++) {
-    output += '<div id="card_'+i+'" onclick="flippedCard(this,\''+array[i]+'\')"></div>';
-  	}
+    output += '<div id="card_'+i+'" onclick="mouse.play() + flippedCard(this,\''+array[i]+'\')"></div>';
+    }
   	document.getElementById('container').innerHTML = output;
   }
     function flippedCard(card,val){
