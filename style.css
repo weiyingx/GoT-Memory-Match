@@ -5,7 +5,6 @@ h1, h2, h3 {
 body {
   width: 1200px;
   margin: auto;
-  /*background-color: black;*/
   background-image: url("images/darkbackground.jpg");
   background-size: cover;
 }
@@ -51,7 +50,6 @@ h3 {
 
 .instructions {
   text-align: center;
-  /*border: solid white 1px;*/
   font-family: gotFont, serif;
   font-size: 15px;
   color: rgb(150,14,16);
