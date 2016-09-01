@@ -64,3 +64,8 @@ function newGame () {
     		}
     	}
     }
+
+var reset = document.getElementById("reset");
+reset.addEventListener('click', function() {
+  newGame();
+});

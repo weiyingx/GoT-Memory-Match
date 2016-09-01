@@ -87,3 +87,15 @@ h3 {
   height: 150px;
   width: 170px;
 }
+
+#reset {
+  height: 40px;
+  width: 100px;
+  border-radius: 0.5em;
+  border-color: rgb(179,43,27);
+  color: rgb(228,154,55);
+  font-family: gotFont, serif;
+  font-size: 12px;
+  background-color: rgb(179,43,27);
+  box-shadow: rgb(179,43,27);
+}
