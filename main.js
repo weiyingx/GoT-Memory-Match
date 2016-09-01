@@ -28,8 +28,8 @@ function newGame () {
     function flippedCard(card,val){
     	if(card.innerHTML == "" && values.length < 2){
     		card.innerHTML = '<img src="images/' + val +'.jpg">';
-        card.style.height = '150px';
-        card.style.width = '170px';
+        // card.style.height = '150px';
+        // card.style.width = '170px';
     		if(values.length == 0){
     			values.push(val);
     			card_ids.push(card.id);
@@ -42,7 +42,7 @@ function newGame () {
             card_ids = [];
     				if(cardFlipped == array.length){
               swal({  title: "The   North   Remembers..",
-                      imageUrl: "images/stark.jpg" });
+                      imageUrl: "images/starksigil_white.png"});
     					document.getElementById('container').innerHTML = "";
     					newGame();
     				}
