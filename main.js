@@ -1,5 +1,6 @@
 console.log("meow")
 
+
 var array = ['A', 'A', 'B', 'B', 'C', 'C', 'D', 'D', 'E', 'E', 'F', 'F', 'G', 'G', 'H', 'H', 'I', 'I', 'J', 'J'];
 var values = [];
 var card_ids = [];
@@ -28,8 +29,6 @@ function newGame () {
     function flippedCard(card,val){
     	if(card.innerHTML == "" && values.length < 2){
     		card.innerHTML = '<img src="images/' + val +'.jpg">';
-        // card.style.height = '150px';
-        // card.style.width = '170px';
     		if(values.length == 0){
     			values.push(val);
     			card_ids.push(card.id);
@@ -68,4 +67,8 @@ function newGame () {
 var reset = document.getElementById("reset");
 reset.addEventListener('click', function() {
   newGame();
+});
+
+document.addEventListener('DOMContentLoaded', function() {
+  console.log("DOM loaded");
 });
